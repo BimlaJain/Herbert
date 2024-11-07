@@ -11,6 +11,7 @@ menuBtn.addEventListener("click", () => {
     closeIcon.classList.toggle("hidden", !isOpen);
 });
 
+// accordion js
 document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
     accordionItem.addEventListener('click', () => {
         const content = accordionItem.querySelector('.accordion-content');
