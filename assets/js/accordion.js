@@ -6,7 +6,7 @@ document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
 
         if (accordionItem.classList.contains('active')) {
             content.style.maxHeight = '0';
-            accordionItem.classList.remove('active');
+            accordionItem.classList.remove('active', 'active-shadow');
         } else {
             document.querySelectorAll('.accordion-item').forEach((item) => {
                 const otherContent = item.querySelector('.accordion-content');
@@ -14,13 +14,13 @@ document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
                 const otherMinusIcon = item.querySelector('.accordion-icon-minus');
                 if (item !== accordionItem) {
                     otherContent.style.maxHeight = '0';
-                    item.classList.remove('active');
+                    item.classList.remove('active', 'active-shadow');
                     otherPlusIcon.classList.remove('hidden');
                     otherMinusIcon.classList.add('hidden');
                 }
             });
             content.style.maxHeight = content.scrollHeight + 'px';
-            accordionItem.classList.add('active');
+            accordionItem.classList.add('active', 'active-shadow');
         }
         plusIcon.classList.toggle('hidden');
         minusIcon.classList.toggle('hidden');
