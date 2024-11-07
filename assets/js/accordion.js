@@ -1,4 +1,3 @@
-// accordion js 
 document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
     accordionItem.addEventListener('click', () => {
         const content = accordionItem.querySelector('.accordion-content');
@@ -27,5 +26,6 @@ document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
         minusIcon.classList.toggle('hidden');
     });
 });
+
 
 document.getElementById("year").textContent = new Date().getFullYear();
