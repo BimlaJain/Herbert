@@ -46,8 +46,8 @@
                         },
                     },
                     fontFamily: {
-                        "lato-sans": ["Lato", 'sans - serif'],
-                        "rubik-sans": ["Rubik", 'sans - serif'],
+                        "lato-sans": ["Lato", 'sans-serif'],
+                        "rubik-sans": ["Rubik", 'sans-serif'],
                     },
                     fontSize: {
                         "custom-xl": "44px",
@@ -65,6 +65,9 @@
                         "custom-xl": "150%",
                         "custom-2xl": "180%",
                     },
+                    borderRadius: {
+                        'corner-full': 'var(--CornerFull)',
+                    },
                 },
             },
         };
@@ -73,7 +76,102 @@
 </head>
 
 <body>
-
+    <section class="py-20">
+        <div class="container">
+            <h2
+                class="font-semibold md:text-5xl text-2xl font-rubik-sans !md:leading-[56px] !leading-7 lg:max-w-[516px] max-w-[530px] mx-auto items-center">
+                Herbert Main <span class="text-[#FF4C24]"> Features</span>
+            </h2>
+            <p
+                class="max-w-[576px] text-[#5F5F5F] font-lato-sans font-normal md:text-base text-sm text-center !md:leading-6 mx-auto md:pt-4 pt-2">
+                Lorem
+                ipsum
+                dolor sit
+                amet
+                consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed.</p>
+            <img src="./assets/images/png/tourism-img.png" alt="tourism-img"
+                class="max-w-[344px] h-[460px] lg:hidden block mx-auto mt-5 pointer-events-none">
+            <div class="flex pt-14 lg:gap-20 md:gap-8">
+                <div class="flex lg:w-4/12 w-full">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col justify-end">
+                            <div class="flex lg:justify-end">
+                                <div class="size-10 bg-orange rounded-[60px] flex items-center justify-center">
+                                    <img src="./assets/images/svg/number1.svg" alt="number1">
+                                </div>
+                            </div>
+                            <p
+                                class="font-medium font-lato-sans md:text-xl text-base pt-4 !leading-6 text-end md:max-w-[318px]">
+                                Find
+                                out which visa
+                                you
+                                might want</p>
+                        </div>
+                        <div class="flex flex-col justify-end lg:pt-14 md:pt-6">
+                            <div class="flex lg:justify-end">
+                                <div class="size-10 bg-orange rounded-[60px] flex items-center justify-center">
+                                    <img src="./assets/images/svg/number2.svg" alt="number">
+                                </div>
+                            </div>
+                            <p
+                                class="font-medium font-lato-sans md:text-xl text-base pt-4 !leading-6 lg:text-end md:max-w-[315px]">
+                                Receive
+                                a checklist
+                                with
+                                necessary documents</p>
+                        </div>
+                        <div class="flex flex-col justify-end lg:pt-14 md:pt-6">
+                            <div class="flex lg:justify-end">
+                                <div class="size-10 bg-orange rounded-[60px] flex items-center justify-center">
+                                    <img src="./assets/images/svg/number3.svg" alt="number">
+                                </div>
+                            </div>
+                            <p
+                                class="font-medium font-lato-sans md:text-xl text-base pt-4 !leading-6 lg:text-end lg:max-w-[325px]  ml-auto">
+                                Write your CV /
+                                Motivation Letter with Herbert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex lg:w-4/12">
+                    <div class="max-w-[344px]">
+                        <img src="./assets/images/png/tourism-img.png" alt="tourism-img"
+                            class="max-w-[324px] object-contain h-[452px] lg:block hidden pointer-events-none">
+                    </div>
+                </div>
+                <div class="flex lg:w-4/12">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col justify-end">
+                            <div class="size-10 bg-orange rounded-[60px] flex items-center justify-center">
+                                <img src="./assets/images/svg/number4.svg" alt="number1">
+                            </div>
+                            <p
+                                class="font-medium font-lato-sans md:text-xl text-base pt-4 !leading-6 md:whitespace-nowrap max-md:w-[150px]">
+                                Help prepare
+                                for your visa
+                                interview</p>
+                        </div>
+                        <div class="flex flex-col justify-end lg:pt-14 md:pt-6">
+                            <div class="size-10 bg-orange rounded-[60px] flex items-center justify-center">
+                                <img src="./assets/images/svg/number5.svg" alt="number">
+                            </div>
+                            <p class="font-medium font-lato-sans md:text-xl text-base pt-4 !leading-6 md:max-w-[325px]">
+                                Practice your
+                                German interactively with Herbert</p>
+                        </div>
+                        <div class="flex flex-col justify-end lg:pt-14 md:pt-6">
+                            <div class="size-10 bg-orange rounded-[60px] flex items-center justify-center">
+                                <img src="./assets/images/svg/number6.svg" alt="number">
+                            </div>
+                            <p class="font-medium font-lato-sans md:text-xl text-base pt-4 !leading-6 md:max-w-[325px]">
+                                Let Herbert
+                                guide you through your fresh start Germany once you get there.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
