@@ -1,16 +1,3 @@
-// Menu Toggle
-const menuBtn = document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-const hamburgerIcon = document.getElementById("hamburger-icon");
-const closeIcon = document.getElementById("close-icon");
-
-menuBtn.addEventListener("click", () => {
-    const isOpen = mobileMenu.classList.toggle("translate-x-0");
-    document.body.classList.toggle("overflow-hidden");
-    hamburgerIcon.classList.toggle("hidden", isOpen);
-    closeIcon.classList.toggle("hidden", !isOpen);
-});
-
 document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
     accordionItem.addEventListener('click', () => {
         const content = accordionItem.querySelector('.accordion-content');
@@ -40,15 +27,5 @@ document.querySelectorAll('.accordion-item').forEach((accordionItem) => {
     });
 });
 
-// cuurent year
-document.getElementById("year").textContent = new Date().getFullYear();
 
-// Back-to-top Button
-const mybutton = document.querySelector(".top-btn");
-const heroSection = document.getElementById("hero");
-window.addEventListener("scroll", () => {
-    mybutton.classList.toggle("hidden", window.scrollY <= heroSection.offsetHeight);
-});
-mybutton.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+document.getElementById("year").textContent = new Date().getFullYear();
