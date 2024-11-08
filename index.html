@@ -45,7 +45,6 @@
                                 md: "768px",
                                 lg: "1024px",
                                 xl: "1140px",
-                                '2xl': "1536px",
                             },
                         },
                         fontFamily: {
@@ -81,12 +80,12 @@
 
     </head>
 
-    <body class="font-lato-sans">
+    <body class="font-lato-sans scroll-smooth">
         <!---------------------------hero section--------------------------------->
         <section id="hero"
-            class=" xl:pb-20 lg:pb-10 md:pb-7 pb-5 relative">
+            class=" xl:pb-20 lg:pb-10 md:pb-7 pb-10 relative">
             <img src="assets/images/webp/hero-layer.webp" alt="hero-layer" class="absolute  bg-cover bg-center -z-20">
-            <div class="container">
+            <div class="container max-sm:px-6">
                 <nav class="flex justify-between items-center xl:pt-6 lg:pt-5 md:pt-4 pt-3 sm:pb-4 pb-0">
                     <a href="#" class="sm:w-44 w-28 ">
                         <img src="assets/images/webp/logo.webp" alt="logo" class="relative z-40">
@@ -163,11 +162,11 @@
                     </div>
                 </nav>
             </div>
-            <div class="container max-w-[1314px] mx-auto">
+            <div class="container max-w-[1314px] mx-auto max-sm:px-6">
                 <div class="flex items-center justify-center">
                     <img src="assets/images/webp/raised man.webp" alt="man with hello"
                         class="xl:w-[329px] lg:w-[290px] md:w-[240px] w-[204px] mt-14 md:block hidden pointer-events-none">
-                    <div class="flex flex-col justify-center items-center md:-ml-8 max-md:px-3">
+                    <div class="flex flex-col justify-center items-center md:-ml-8 xl:-ml-24">
                         <h1
                             class="font-rubik-sans font-semibold xl:text-custom-2xl lg:text-4xl md:text-[26px] text-[28px] max-md:pt-20 text-black max-w-[716px] mx-auto text-center xl:pb-4 pb-2 !leading-custom-lg">
                             Navigating <span class="text-red">German Bureaucracy</span> with ease</h1>
@@ -175,7 +174,7 @@
                             class="font-normal md:text-base text-sm !leading-custom-xl text-gray text-center xl:pb-[42px] lg:pb-8 pb-8">
                             Herbert Visa: Your AI-powered assistant for German visa and immigration processes</p>
                         <button
-                            class="bg-orange py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white xl:w-[338px] lg:w-[320px]">Start
+                            class="bg-orange py-[13px] sm:py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white xl:w-[338px] lg:w-[320px] max-sm:h-[46px]">Start
                             your conversation with Herbert</button>
                     </div>
                     <img src="assets/images/webp/down man.webp" alt="man hands down"
@@ -183,34 +182,34 @@
                 </div>
                 <div class="flex">
                     <img src="assets/images/webp/raised man.webp" alt="man with hello"
-                        class=" w-[204px] h-[372px] mt-14 md:hidden block pointer-events-none">
+                        class=" w-[204px] h-[372px] mt-20 md:hidden block pointer-events-none">
                     <img src="assets/images/webp/down man.webp" alt="man hands down"
                         class=" w-[139px] h-[231px] mt-28 md:hidden block pointer-events-none">
                 </div>
             </div>
-            <div class="container ">
-                <div class="flex max-lg:flex-wrap md:gap-7 gap-3 justify-center items-center max-lg:pt-11 -mt-8">
+            <div class="container max-w-[1174px] mx-auto max-sm:px-6">
+                <div class="flex max-lg:flex-wrap md:gap-7 gap-3 justify-center items-center max-lg:mt-11 -mt-8">
                     <div
-                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
-                        <img src="assets/images/svg/form.svg" alt="form svg" class="size-14 pointer-events-none">
-                        <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Interactive Forms
+                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[76px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
+                        <img src="assets/images/svg/form.svg" alt="form svg" class="pointer-events-none sm:size-14 size-12">
+                        <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">Interactive Forms
                         </h2>
                         <p class="font-normal md:text-base text-sm text-gray text-center">Simplify visa application
                             forms</p>
                     </div>
                     <div
-                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[53px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
-                        <img src="assets/images/svg/check.svg" alt="checklist svg" class="size-14 pointer-events-none">
-                        <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Document Checklist
+                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[53px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
+                        <img src="assets/images/svg/check.svg" alt="checklist svg" class="sm:size-14 size-12 pointer-events-none">
+                        <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">Document Checklist
                         </h2>
                         <p class="font-normal md:text-base text-sm text-gray text-center">Personalized document
                             preparation</p>
                     </div>
                     <div
-                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
+                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
                         <img src="assets/images/svg/assistance.svg" alt="assistance svg"
-                            class="size-14 pointer-events-none">
-                        <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Language
+                            class="sm:size-14 size-12 pointer-events-none">
+                        <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">Language
                             Assistance</h2>
                         <p class="font-normal md:text-base text-sm text-gray text-center">German language skills
                             assessment</p>
@@ -483,285 +482,285 @@
             </div>
         </section>
 
-        <!-------accordion section --------->
-        <section id="blog" class="xl:py-[70px] lg:py-16 md:py-12 py-[20px] relative">
-            <div class="absolute top-[25%]">
-                <img src="assets/images/webp/faq-layer.webp" alt="faq-layer" class="pointer-events-none">
+    <!-------accordion section --------->
+    <section id="blog" class="xl:pb-[70px] lg:pb-16 md:pb-12 pb-[20px] relative">
+            <img src="assets/images/webp/faq-layer.webp" alt="faq-layer" class="pointer-events-none -z-10 absolute top-[25%]">
+        <div class="container max-sm:px-6">
+            <h2
+                class="font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-black text-center leading-custom-lg font-rubik-sans">
+                Frequently Asked <span class="font-bold text-red">Questions</span>
+            </h2>
+            <p
+                class="font-normal md:text-base text-sm text-gray leading-custom-xl max-w-[622px] mx-auto text-center md:pt-4 pt-[14px]">
+                Help
+                users find quick answers to common queries about Herbert, our AI-powered assistant for German visa
+                and
+                immigration
+                processes.</p>
+            <div class="mx-auto xl:pt-16 lg:pt-12 md:pt-10 pt-8 lg:mb-[361px] md:mb-[230px] mb-[200px]">
+                <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
+                    <div
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
+                        <div class="accordion-header flex justify-between items-center w-full text-left">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black items-center flex">
+                                What is Herbert?
+                            </p>
+                            <div class="accordion-icons flex justify-end">
+                                <img src="assets/images/webp/plus-icon.webp" alt="plus"
+                                    class="accordion-icon-plus rotate-180">
+                                <img src="assets/images/webp/minus-icon.webp" alt="minus"
+                                    class="accordion-icon-minus hidden">
+                            </div>
+                        </div>
+                        <div
+                            class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+                            Herbert is an AI-powered assistant designed to help with German visa and immigration
+                            processes.
+                            It provides guidance,
+                            answers questions, and helps you navigate the requirements and procedures involved.
+                        </div>
+                    </div>
+                    <div
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
+                        <div class="accordion-header flex justify-between items-center w-full text-left">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
+                                How accurate is the information provided by Herbert?
+                            </p>
+                            <div class="accordion-icons flex justify-end">
+                                <img src="assets/images/webp/plus-icon.webp" alt="plus"
+                                    class="accordion-icon-plus rotate-180">
+                                <img src="assets/images/webp/minus-icon.webp" alt="minus"
+                                    class="accordion-icon-minus hidden ">
+                            </div>
+                        </div>
+                        <div
+                            class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+                            Herbert is an AI-powered assistant designed to help with German visa and immigration
+                            processes.
+                            It provides
+                            guidance,
+                            answers questions, and helps you navigate the requirements and procedures involved.
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
+                    <div
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        <div class="accordion-header flex justify-between items-center w-full text-left">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
+                                How can I access Herbert?
+                            </p>
+                            <div class="accordion-icons flex  bg-grey justify-end">
+                                <img src="assets/images/webp/plus-icon.webp" alt="plus"
+                                    class="accordion-icon-plus rotate-180">
+                                <img src="assets/images/webp/minus-icon.webp" alt="minus"
+                                    class="accordion-icon-minus hidden">
+                            </div>
+                        </div>
+                        <div
+                            class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+                            Herbert is an AI-powered assistant designed to help with German visa and immigration
+                            processes.
+                            It provides
+                            guidance,
+                            answers questions, and helps you navigate the requirements and procedures involved.
+                        </div>
+                    </div>
+                    <div
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        <div class="accordion-header flex justify-between items-center w-full text-left">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
+                                How can Herbert help me with my visa application?
+                            </p>
+                            <div class="accordion-icons flex justify-end">
+                                <img src="assets/images/webp/plus-icon.webp" alt="plus"
+                                    class="accordion-icon-plus  rotate-180">
+                                <img src="assets/images/webp/minus-icon.webp" alt="minus"
+                                    class="accordion-icon-minus hidden ">
+                            </div>
+                        </div>
+                        <div
+                            class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+                            Herbert is an AI-powered assistant designed to help with German visa and immigration
+                            processes.
+                            It provides
+                            guidance,
+                            answers questions, and helps you navigate the requirements and procedures involved.
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
+                    <div
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        <div class="accordion-header flex justify-between items-center w-full text-left">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
+                                Is Herbert available in multiple languages?
+                            </p>
+                            <div class="accordion-icons flex bg-grey justify-end">
+                                <img src="assets/images/webp/plus-icon.webp" alt="plus"
+                                    class="accordion-icon-plus rotate-180">
+                                <img src="assets/images/webp/minus-icon.webp" alt="minus"
+                                    class="accordion-icon-minus hidden">
+                            </div>
+                        </div>
+                        <div
+                            class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+                            Herbert is an AI-powered assistant designed to help with German visa and immigration
+                            processes.
+                            It provides
+                            guidance,
+                            answers questions, and helps you navigate the requirements and procedures involved.
+                        </div>
+                    </div>
+                    <div
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        <div class="accordion-header flex justify-between items-center w-full text-left">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
+                                Can Herbert help me fill out my visa application forms?
+                            </p>
+                            <div class="accordion-icons flex justify-end">
+                                <img src="assets/images/webp/plus-icon.webp" alt="plus"
+                                    class="accordion-icon-plus  rotate-180">
+                                <img src="assets/images/webp/minus-icon.webp" alt="minus"
+                                    class="accordion-icon-minus hidden">
+                            </div>
+                        </div>
+                        <div
+                            class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+                            Herbert is an AI-powered assistant designed to help with German visa and immigration
+                            processes.
+                            It provides
+                            guidance,
+                            answers questions, and helps you navigate the requirements and procedures involved.
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="whitespace-nowrap relative mx-auto flex xl:mt-8 lg:mt-10 md:mt-8 mt-8 items-center sm:py-[14px] py-2 sm:px-6 px-4 font-medium overflow-hidden bg-orange border-orange rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px] h-12">
+                    <span class="relative z-10 flex">View all
+                    </span>
+                </button>
             </div>
-            <div class="container">
+        </div>
+    </section>
+    
+    <!---------footer ----------->
+    <section id="footer" class="relative 2xl:w-[1536px] mx-auto">
+        <div class="container max-sm:px-6">
+            <div
+                class="xl:w-[1140px] lg:w-[1000px] md:w-[745px] sm:w-[600px] bg-orange rounded-xl py-16 absolute xl:left-[11%] xl:top-[-63%] lg:top-[-68%] max-sm:w-[333px] mx-auto max-sm:p-5 md:top-[-39%] top-[-20%] max-sm:top-[-20%]">
                 <h2
-                    class="font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-black text-center leading-custom-lg font-rubik-sans">
-                    Frequently Asked <span class="font-bold text-red">Questions</span>
-                </h2>
+                    class="font-semibold font-rubik-sans text-white xl:text-5xl lg:text-4xl md:text-3xl text-2xl max-w-[632px] mx-auto text-center !leading-custom-lg">
+                    Need Help in Your Visa? Ask Herbert Now!</h2>
                 <p
-                    class="font-normal md:text-base text-sm text-gray leading-custom-xl max-w-[622px] mx-auto text-center md:pt-4 pt-[14px]">
-                    Help
-                    users find quick answers to common queries about Herbert, our AI-powered assistant for German visa
-                    and
-                    immigration
-                    processes.</p>
-                <div class="mx-auto xl:pt-16 lg:pt-12 md:pt-10 pt-8 lg:mb-[381px] md:mb-[230px] mb-[181px]">
-                    <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
-                        <div
-                            class="accordion-item py-[18px] px-6 border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center w-full text-left">
-                                <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
-                                    What is Herbert?
-                                </p>
-                                <div class="accordion-icons flex justify-end">
-                                    <img src="assets/images/webp/plus-icon.webp" alt="plus"
-                                        class="accordion-icon-plus rotate-180">
-                                    <img src="assets/images/webp/minus-icon.webp" alt="minus"
-                                        class="accordion-icon-minus hidden">
-                                </div>
-                            </div>
-                            <div
-                                class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
-                                Herbert is an AI-powered assistant designed to help with German visa and immigration
-                                processes.
-                                It provides guidance,
-                                answers questions, and helps you navigate the requirements and procedures involved.
-                            </div>
-                        </div>
-                        <div
-                            class="accordion-item py-[18px] px-6 border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center w-full text-left">
-                                <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
-                                    How accurate is the information provided by Herbert?
-                                </p>
-                                <div class="accordion-icons flex justify-end">
-                                    <img src="assets/images/webp/plus-icon.webp" alt="plus"
-                                        class="accordion-icon-plus rotate-180">
-                                    <img src="assets/images/webp/minus-icon.webp" alt="minus"
-                                        class="accordion-icon-minus hidden ">
-                                </div>
-                            </div>
-                            <div
-                                class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
-                                Herbert is an AI-powered assistant designed to help with German visa and immigration
-                                processes.
-                                It provides
-                                guidance,
-                                answers questions, and helps you navigate the requirements and procedures involved.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
-                        <div
-                            class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center w-full text-left">
-                                <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
-                                    How can I access Herbert?
-                                </p>
-                                <div class="accordion-icons flex  bg-grey justify-end">
-                                    <img src="assets/images/webp/plus-icon.webp" alt="plus"
-                                        class="accordion-icon-plus rotate-180">
-                                    <img src="assets/images/webp/minus-icon.webp" alt="minus"
-                                        class="accordion-icon-minus hidden">
-                                </div>
-                            </div>
-                            <div
-                                class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
-                                Herbert is an AI-powered assistant designed to help with German visa and immigration
-                                processes.
-                                It provides
-                                guidance,
-                                answers questions, and helps you navigate the requirements and procedures involved.
-                            </div>
-                        </div>
-                        <div
-                            class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center w-full text-left">
-                                <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
-                                    How can Herbert help me with my visa application?
-                                </p>
-                                <div class="accordion-icons flex justify-end">
-                                    <img src="assets/images/webp/plus-icon.webp" alt="plus"
-                                        class="accordion-icon-plus  rotate-180">
-                                    <img src="assets/images/webp/minus-icon.webp" alt="minus"
-                                        class="accordion-icon-minus hidden ">
-                                </div>
-                            </div>
-                            <div
-                                class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
-                                Herbert is an AI-powered assistant designed to help with German visa and immigration
-                                processes.
-                                It provides
-                                guidance,
-                                answers questions, and helps you navigate the requirements and procedures involved.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
-                        <div
-                            class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center w-full text-left">
-                                <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
-                                    Is Herbert available in multiple languages?
-                                </p>
-                                <div class="accordion-icons flex bg-grey justify-end">
-                                    <img src="assets/images/webp/plus-icon.webp" alt="plus"
-                                        class="accordion-icon-plus rotate-180">
-                                    <img src="assets/images/webp/minus-icon.webp" alt="minus"
-                                        class="accordion-icon-minus hidden">
-                                </div>
-                            </div>
-                            <div
-                                class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
-                                Herbert is an AI-powered assistant designed to help with German visa and immigration
-                                processes.
-                                It provides
-                                guidance,
-                                answers questions, and helps you navigate the requirements and procedures involved.
-                            </div>
-                        </div>
-                        <div
-                            class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center w-full text-left">
-                                <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
-                                    Can Herbert help me fill out my visa application forms?
-                                </p>
-                                <div class="accordion-icons flex justify-end">
-                                    <img src="assets/images/webp/plus-icon.webp" alt="plus"
-                                        class="accordion-icon-plus  rotate-180">
-                                    <img src="assets/images/webp/minus-icon.webp" alt="minus"
-                                        class="accordion-icon-minus hidden">
-                                </div>
-                            </div>
-                            <div
-                                class="accordion-content font-normal md:text-base text-sm leading-custom-xl text-gray pt-3 max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
-                                Herbert is an AI-powered assistant designed to help with German visa and immigration
-                                processes.
-                                It provides
-                                guidance,
-                                answers questions, and helps you navigate the requirements and procedures involved.
-                            </div>
-                        </div>
-                    </div>
+                    class="font-normal md:text-base text-sm text-white leading-custom-xl max-w-[528px] mx-auto text-center pt-3 md:pt-[14px]">
+                    Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+                    sit
+                    nullam.</p>
+                <div class="sm:flex md:gap-4 gap-3 max-w-[387px] mx-auto max-lg:pt-8">
                     <button
-                        class="whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 md:mt-8 mt-4 items-center sm:py-[14px] py-2 sm:px-6 px-4 font-medium font-inter-sans overflow-hidden bg-orange border-orange rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px] h-12">
-                        <span class="relative z-10 flex">View all
+                        class="max-sm:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 sm:mt-3 items-center sm:py-[14px] py-3 px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
+                        <span class="relative z-10 flex">Start your conversation
+                        </span>
+                    </button>
+                    <button
+                        class="max-sm:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 mt-3 items-center sm:py-[14px] py-3 px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
+                        <span class="relative z-10 flex">Learn More
                         </span>
                     </button>
                 </div>
             </div>
-        </section>
-
-        <!---------footer ----------->
-        <section id="footer" class="relative">
-            <div class="container">
-                <div
-                    class="xl:w-[1140px] lg:w-[1000px] md:w-[745px] sm:w-[600px] bg-orange rounded-xl py-16 absolute xl:left-[11%] lg:top-[-54%] max-sm:w-[353px] mx-auto max-sm:p-5 md:top-[-39%] top-[-20%] max-sm:top-[-20%]">
-                    <h2
-                        class="font-semibold font-rubik-sans text-white xl:text-5xl lg:text-4xl md:text-3xl text-2xl max-w-[632px] mx-auto text-center !leading-custom-lg">
-                        Need Help in Your Visa? Ask Herbert Now!</h2>
-                    <p
-                        class="font-normal md:text-base text-sm text-white leading-custom-xl max-w-[528px] mx-auto text-center pt-3 md:pt-[14px]">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit
-                        nullam.</p>
-                    <div class="lg:flex md:gap-4 gap-3 max-w-[387px] mx-auto max-lg:pt-8">
-                        <button
-                            class="max-lg:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 items-center py-[14px] px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
-                            <span class="relative z-10 flex">Start your conversation
-                            </span>
-                        </button>
-                        <button
-                            class="max-lg:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 mt-3 items-center py-[14px] px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
-                            <span class="relative z-10 flex">Learn More
-                            </span>
-                        </button>
+        </div>
+        <footer id="footer"
+            class="xl:pt-[212px] lg:pt-[174px] md:pt-[170px] pt-[223px] xl:px-0 lg:px-4 md:px-4 px-0 bg-off-white">
+            <div class="container max-sm:px-6">
+                <div class="mx-auto flex flex-wrap justify-between md:gap-8 sm:gap-7 gap-6">
+                    <div class="flex-col flex">
+                        <a href="#">
+                            <img src="assets/images/webp/logo.webp" alt="logo" class="lg:w-[326px] md:w-[250px] w-[210px]">
+                        </a>
+                        <p
+                            class="text-black opacity-60 max-w-[412px] !leading-custom-xl pt-4 font-normal sm:text-base text-sm">
+                            Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis
+                            tempor
+                            tristique. Purus sed
+                            phasellus metus lectus auctor.
+                        </p>
                     </div>
-                </div>
-            </div>
-            <footer id="footer"
-                class="xl:pt-[212px] lg:pt-[174px] pt-[190px] xl:px-0 lg:px-4 md:px-4 px-0 bg-off-white">
-                <div class="container">
-                    <div class="mx-auto flex flex-wrap justify-between md:gap-8 sm:gap-7 gap-6">
-                        <div class="flex-col flex">
-                            <a href="#">
-                                <img src="assets/images/webp/logo.webp" alt="logo" class="md:w-[326px] w-[210px]">
-                            </a>
-                            <p
-                                class="text-black opacity-60 max-w-[412px] !leading-custom-xl pt-4 font-normal text-base">
-                                Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis
-                                tempor
-                                tristique. Purus sed
-                                phasellus metus lectus auctor.
-                            </p>
-                        </div>
-                        <div class="flex-col flex">
-                            <h5 class="text-base font-medium text-gray-900 sm:mb-5 md:mb-4">Quick Links</h5>
-                            <ul class="text-gray-500 space-y-1">
-                                <li><a href="#hero"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Services</a>
+                    <div class="flex flex-wrap lg:gap-20 md:gap-40 gap-10">
+                        <div class="flex-col flex max-sm:mr-10">
+                            <h5 class="sm:text-base text-sm font-medium text-gray-900 sm:mb-5 md:mb-4">Quick Links</h5>
+                            <ul class="text-gray-500 space-y-1 pt-4 sm:pt-0">
+                                <li><a href="#services"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">Services</a>
                                 </li>
                                 <li><a href="#about"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">About
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">About
                                         Us</a>
                                 </li>
-                                <li><a href="#trip"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Features</a>
+                                <li><a href="#features"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">Features</a>
                                 </li>
-                                <li><a href="#trip"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Plans</a>
+                                <li><a href="#plan"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] sm:pb-2 pb-0  font-normal font-montserrat-sans sm:text-base text-sm">Plans</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="flex-col flex">
-                            <h5 class="text-base font-medium text-gray-900 sm:mb-5 md:mb-4">Support</h5>
-                            <ul class="text-gray-500 space-y-1 pt-2 sm:pt-0">
-                                <li><a href="#footer"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Help
+                            <h5 class="sm:text-base text-sm font-medium text-gray-900 sm:mb-5 md:mb-4">Support</h5>
+                            <ul class="text-gray-500 space-y-1 pt-4 sm:pt-0">
+                                <li><a href="#help"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Help
                                         Center
                                         Us</a></li>
-                                <li><a href="#testimonials"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Term
+                                <li><a href="#term"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Term
                                         & Conditions</a>
                                 </li>
-                                <li><a href="#about"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Privacy
+                                <li><a href="#privacy"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Privacy
                                         Policy</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="flex-col flex">
-                            <p class="text-base font-medium text-gray-900 pb-3 md:mb-4">Follow Us</p>
+                            <p class="sm:text-base text-sm font-medium text-gray-900 pb-3 md:mb-4">Follow Us</p>
                             <div class="flex gap-3">
-                                <a href="https://www.facebook.com/"
+                                <a href="https://www.facebook.com/" target="_blank"
                                     class="gap-4 hover:scale-125 transition-all duration-500"><img
-                                        src="assets/images/svg/fb.svg" alt="facebook"> </a>
-
-                                <a href="https://www.instagram.com/"
+                                        src="assets/images/svg/facebook.svg" alt="facebook"> </a>
+    
+                                <a href="https://www.instagram.com/" target="_blank"
                                     class="gap-3 hover:scale-125 transition-all duration-500"><img
-                                        src="assets/images/svg/insta.svg" alt="instagram"></a>
-
-                                <a href="https://in.linkedin.com/"
+                                        src="assets/images/svg/instagram.svg" alt="instagram"></a>
+    
+                                <a href="https://in.linkedin.com/" target="_blank"
                                     class="gap-3 hover:scale-125 transition-all duration-500"><img
-                                        src="assets/images/svg/link.svg" alt="linkedin"></a>
-
+                                        src="assets/images/svg/linkdin.svg" alt="linkdin"></a>
+    
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="border border-black opacity-15 mt-12"></div>
-                <div class="my-4 text-black opacity-50 text-sm sm:flex justify-center">
-                    <p class="font-normal font-inter-sans md:text-base text-sm sm:text-left text-center">
-                        Copyright &copy; <span id="year"></span> herbert, All rights reserved 
-                    </p>
-                </div>
-                <div
-                    class="top-btn md:size-14 sm:size-10 size-9 rounded-full fixed bottom-7 right-7 bg-darkblue z-20 p-2 bg-orange hover:scale-110 duration-500 cursor-pointer flex justify-center items-center transition scroll-smooth">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="white"
-                        class="bi bi-chevron-double-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
-                        <path fill-rule="evenodd"
-                            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-                    </svg>
-                </div>
-            </footer>
-        </section>
+            </div>
+            <div class="border border-black opacity-15 mt-12"></div>
+            <div class="my-4 text-gray text-sm sm:flex justify-center">
+                <p class="font-normal font-inter-sans md:text-base text-sm sm:text-left text-center">
+                    Copyright &copy; <span id="year"></span> herbert, All rights reserved
+                </p>
+            </div>
+            <div
+                class="top-btn md:size-14 sm:size-10 size-9 rounded-full fixed bottom-7 right-7 bg-darkblue z-20 p-2 bg-orange hover:scale-110 duration-500 cursor-pointer flex justify-center items-center transition scroll-smooth">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="white" class="bi bi-chevron-double-up"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                    <path fill-rule="evenodd"
+                        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                </svg>
+            </div>
+        </footer>
+    </section>
 
         <!--------------------------------js link-------------------------->
         <script src="assets/js/app.js"></script>
