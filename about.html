@@ -45,7 +45,6 @@
                             md: "768px",
                             lg: "1024px",
                             xl: "1140px",
-                            '2xl': "1536px",
                         },
                     },
                     fontFamily: {
@@ -81,11 +80,11 @@
 
 </head>
 
-<body class="font-lato-sans">
+<body class="font-lato-sans scroll-smooth">
     <!---------------------------hero section--------------------------------->
-    <section id="hero" class=" xl:pb-20 lg:pb-10 md:pb-7 pb-5 relative">
+    <section id="hero" class=" xl:pb-20 lg:pb-10 md:pb-7 pb-10 relative">
         <img src="assets/images/webp/hero-layer.webp" alt="hero-layer" class="absolute  bg-cover bg-center -z-20">
-        <div class="container">
+        <div class="container max-sm:px-6">
             <nav class="flex justify-between items-center xl:pt-6 lg:pt-5 md:pt-4 pt-3 sm:pb-4 pb-0">
                 <a href="#" class="sm:w-44 w-28 ">
                     <img src="assets/images/webp/logo.webp" alt="logo" class="relative z-40">
@@ -126,7 +125,7 @@
                             class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Herbert</a>
                     </li>
                     <li>
-                        <a href="#main"
+                        <a href="#features"
                             class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Sources</a>
                     </li>
                     <li class="relative">
@@ -144,7 +143,7 @@
                             <p class="border border-black opacity-15 w-[327px] my-6"></p>
                         </li>
                         <li>
-                            <a href="#main"
+                            <a href="#plan"
                                 class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300 flex justify-center">Sources</a>
                             <p class="border border-black opacity-15 w-[327px] my-6"></p>
                         </li>
@@ -162,19 +161,19 @@
                 </div>
             </nav>
         </div>
-        <div class="container max-w-[1314px] mx-auto">
+        <div class="container max-w-[1314px] mx-auto max-sm:px-6">
             <div class="flex items-center justify-center">
                 <img src="assets/images/webp/raised man.webp" alt="man with hello"
                     class="xl:w-[329px] lg:w-[290px] md:w-[240px] w-[204px] mt-14 md:block hidden pointer-events-none">
-                <div class="flex flex-col justify-center items-center md:-ml-8 max-md:px-3">
+                <div class="flex flex-col justify-center items-center md:-ml-8 xl:-mt-24">
                     <h1
-                        class="font-rubik-sans font-semibold xl:text-custom-2xl lg:text-4xl md:text-[26px] text-[28px] max-md:pt-20 text-black max-w-[716px] mx-auto text-center xl:pb-4 pb-2 !leading-custom-lg">
+                        class="font-rubik-sans font-semibold xl:text-custom-2xl lg:text-4xl md:text-[26px] text-[28px] max-md:pt-[85px] text-black max-w-[716px] mx-auto text-center xl:pb-4 pb-2 !leading-custom-lg">
                         Navigating <span class="text-red">German Bureaucracy</span> with ease</h1>
                     <p
                         class="font-normal md:text-base text-sm !leading-custom-xl text-gray text-center xl:pb-[42px] lg:pb-8 pb-8">
                         Herbert Visa: Your AI-powered assistant for German visa and immigration processes</p>
                     <button
-                        class="bg-orange py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white xl:w-[338px] lg:w-[320px]">Start
+                        class="bg-orange py-[13px] sm:py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white xl:w-[338px] lg:w-[320px] max-sm:h-[46px]">Start
                         your conversation with Herbert</button>
                 </div>
                 <img src="assets/images/webp/down man.webp" alt="man hands down"
@@ -182,34 +181,38 @@
             </div>
             <div class="flex">
                 <img src="assets/images/webp/raised man.webp" alt="man with hello"
-                    class=" w-[204px] h-[372px] mt-14 md:hidden block pointer-events-none">
+                    class=" w-[204px] h-[372px] mt-20 md:hidden block pointer-events-none">
                 <img src="assets/images/webp/down man.webp" alt="man hands down"
                     class=" w-[139px] h-[231px] mt-28 md:hidden block pointer-events-none">
             </div>
         </div>
-        <div class="container ">
-            <div class="flex max-lg:flex-wrap md:gap-7 gap-3 justify-center items-center max-lg:pt-11 -mt-8">
+        <div class="container max-w-[1174px] mx-auto max-sm:px-6">
+            <div class="flex max-lg:flex-wrap md:gap-7 gap-3 justify-center items-center max-lg:mt-11 -mt-8">
                 <div
-                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
-                    <img src="assets/images/svg/form.svg" alt="form svg" class="size-14 pointer-events-none">
-                    <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Interactive Forms
+                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[76px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
+                    <img src="assets/images/svg/form.svg" alt="form svg" class="pointer-events-none sm:size-14 size-12">
+                    <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">
+                        Interactive Forms
                     </h2>
                     <p class="font-normal md:text-base text-sm text-gray text-center">Simplify visa application
                         forms</p>
                 </div>
                 <div
-                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[53px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
-                    <img src="assets/images/svg/check.svg" alt="checklist svg" class="size-14 pointer-events-none">
-                    <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Document Checklist
+                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[53px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
+                    <img src="assets/images/svg/check.svg" alt="checklist svg"
+                        class="sm:size-14 size-12 pointer-events-none">
+                    <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">
+                        Document Checklist
                     </h2>
                     <p class="font-normal md:text-base text-sm text-gray text-center">Personalized document
                         preparation</p>
                 </div>
                 <div
-                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
+                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
                     <img src="assets/images/svg/assistance.svg" alt="assistance svg"
-                        class="size-14 pointer-events-none">
-                    <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Language
+                        class="sm:size-14 size-12 pointer-events-none">
+                    <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">
+                        Language
                         Assistance</h2>
                     <p class="font-normal md:text-base text-sm text-gray text-center">German language skills
                         assessment</p>
@@ -219,7 +222,7 @@
     </section>
 
     <!---------------MAIN FEATURES-------------------->
-    <section id="main" class="xl:pt-[60px] lg:pt-10 md:pt-7 pt-10 xl:pb-[120px] lg:pb-20 pb-20 relative">
+    <section id="features" class="xl:pt-[60px] lg:pt-10 md:pt-7 pt-10 xl:pb-[120px] lg:pb-20 pb-20 relative">
         <img src="./assets/images/webp/second-layer.webp" alt="second-layer"
             class="absolute top-[-25%] right-0 max-w-[277px] h-[473px] xl:block hidden pointer-events-none">
         <img src="./assets/images/webp/layer-img.webp" alt="layer-img"
@@ -361,26 +364,26 @@
     </section>
 
     <!----------------PRICING PLANS------------------->
-    <section class="bg-light-white relative xl:py-20 lg:py-16 md:py-20 py-16">
+    <section id="plan" class="bg-light-white relative xl:py-20 lg:py-16 md:py-20 py-16">
         <img src="./assets/images/webp/third-layer.webp" alt="third-layer"
             class="absolute top-[10%] right-0 max-w-[277px] h-[338px] xl:block hidden pointer-events-none">
         <div class="container max-sm:px-6">
             <h2
-                class="font-semibold md:text-5xl text-2xl font-rubik-sans leading-custom-lg justify-center flex items-center md:pb-4 md:pb-2">
+                class="font-semibold md:text-5xl text-2xl font-rubik-sans leading-custom-lg justify-center flex items-center">
                 Friendly Pricing <span class="text-red pl-1"> Plans</span>
             </h2>
-            <p class="font-normal text-base !leading-6 text-gray font-lato-sans pt-4 max-w-[515px] text-center mx-auto">
+            <p
+                class="font-normal md:text-base text-xs leading-5 md:!leading-6 text-gray font-lato-sans pt-4 max-w-[515px] text-center mx-auto">
                 Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
                 nullam.</p>
             <div class="flex max-lg:flex-wrap md:pt-14 pt-8">
                 <div class="md:max-w-[338px] max-md:pt-14 max-sm:pt-0">
                     <div class="flex md:gap-32 gap-[200px] items-center">
-                        <h2 class="font-semibold md:text-custom-xl text-2xl leading-[52px]">$5/mo</h2>
-                        <button
-                            class="bg-black py-1 px-2 text-white rounded-md h-[34px] md:text-base text-xs">Basic</button>
+                        <h2 class="font-semibold md:text-custom-xl text-2xl leading-[52px] font-rubik-sans">$5/mo</h2>
+                        <div class="bg-black py-1 px-2 text-white rounded-md h-[34px] text-base">Basic</div>
                     </div>
                     <p
-                        class="md:max-w-[336px] max-w-[327px] md:pt-4 pt-2 font-medium md:text-base text-sm text-gray !leading-6">
+                        class="md:max-w-[321px]  max-w-[327px] md:pt-4 pt-2 font-medium md:text-base text-sm text-gray !leading-6">
                         Ideal for
                         newcomers! Get
                         quick and reliable answers to your basic questions
@@ -392,16 +395,16 @@
                         <p class="font-normal text-base text-gray">10 messages</p>
                     </div>
                     <button
-                        class="py-[14px] xl:px-20 md:px-16 max-sm:w-full font-semibold md:text-base text-sm !leading-5 bg-orange rounded-lg text-white whitespace-nowrap hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">
+                        class="py-[14px] xl:px-20 md:px-16 max-sm:w-full sm:h-[47px] h-[45px] flex items-center justify-center font-semibold md:text-base text-sm !leading-5 bg-orange rounded-lg text-white whitespace-nowrap hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">
                         Upgrade to Premium</button>
                 </div>
                 <div class="border-r-[1px] xl:mx-10 lg:mx-4 md:mx-12 border-black opacity-15 md:block hidden"></div>
                 <div class="border w-full my-8 border-black opacity-15 md:hidden block"></div>
                 <div class="md:max-w-[338px] max-md:pt-14 max-sm:pt-0">
                     <div class="flex md:gap-16 gap-[170px] items-center">
-                        <h2 class="font-semibold md:text-custom-xl text-2xl leading-[52px]">$10/mo</h2>
-                        <button
-                            class="bg-yellow py-1 px-2 text-black rounded-md justify-between h-[34px] md:text-base text-xs">Standard</button>
+                        <h2 class="font-semibold md:text-custom-xl text-2xl leading-[52px] font-rubik-sans">$10/mo</h2>
+                        <div class="bg-yellow py-1 px-2 text-black rounded-md justify-between h-[34px] text-base">
+                            Standard</div>
                     </div>
                     <p
                         class="md:max-w-[308px] max-w-[327px] md:pt-4 pt-2 font-medium md:text-base text-sm text-gray !leading-6">
@@ -417,16 +420,16 @@
                         <p class="font-normal text-base text-gray">25 messages</p>
                     </div>
                     <button
-                        class="py-[14px] xl:px-20 md:px-16 max-sm:w-full font-semibold md:text-base text-sm !leading-5 bg-orange rounded-lg text-white whitespace-nowrap hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">
+                        class="py-[14px] xl:px-20 md:px-16 max-sm:w-full font-semibold md:text-base text-sm !leading-5 bg-orange rounded-lg text-white whitespace-nowrap hover:text-orange transition-all sm:h-[47px] h-[45px] flex items-center justify-center duration-500 border-2 border-orange hover:bg-white">
                         Upgrade to Standard</button>
                 </div>
                 <div class="border-r-[1px] xl:mx-10 lg:mx-4 border-black opacity-15 lg:block hidden"></div>
                 <div class="border w-full my-8 border-black opacity-15 md:hidden block"></div>
                 <div class="md:max-w-[338px] max-lg:pt-14 max-lg:mx-auto max-sm:pt-0">
                     <div class="flex xl:gap-14 lg:gap-6 md:gap-14 gap-[170px] items-center">
-                        <h2 class="font-semibold md:text-custom-xl text-2xl leading-[52px]">$20/mo</h2>
-                        <button
-                            class="bg-red py-1 px-2 text-white rounded-md justify-between h-[34px] md:text-base text-xs">Premium</button>
+                        <h2 class="font-semibold md:text-custom-xl text-2xl leading-[52px] font-rubik-sans">$20/mo</h2>
+                        <div class="bg-red py-1 px-2 text-white rounded-md justify-between h-[34px] text-base">Premium
+                        </div>
                     </div>
                     <p class="xl:max-w-[336px] md:pt-4 pt-2 font-medium md:text-base text-sm text-gray !leading-6">Have
                         Herbert accompany you
@@ -438,7 +441,7 @@
                         <p class="font-normal text-base text-gray">50 messages</p>
                     </div>
                     <button
-                        class="py-[14px] xl:px-20 md:px-16 max-sm:w-full font-semibold md:text-base text-sm !leading-5 bg-orange rounded-lg text-white whitespace-nowrap hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">
+                        class="py-[14px] xl:px-20 md:px-16 max-sm:w-full sm:h-[47px] h-[45px] flex items-center justify-center font-semibold md:text-base text-sm !leading-5 bg-orange rounded-lg text-white whitespace-nowrap hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">
                         Upgrade to Premium</button>
                 </div>
             </div>
@@ -446,7 +449,8 @@
     </section>
 
     <!----------------TEAM & RESOURCES------------------->
-    <section class="relative overflow-hidden xl:pt-36 lg:pt-216 md:pt-20 pt-16 xl:pb-[125px] lg:pb-20 md:pb-14 pb-20">
+    <section id="services"
+        class="relative overflow-hidden xl:pt-36 lg:pt-216 md:pt-20 pt-16 xl:pb-[125px] lg:pb-20 md:pb-14 pb-20 2xl:max-w-[1440px] mx-auto">
         <img src="./assets/images/webp/bg-layer.webp" alt="bg-layer"
             class="max-w-[165px] h-[375px] absolute top-[15%] xl:block hidden pointer-events-none">
         <img src="./assets/images/webp/group-img.webp" alt="group-img"
@@ -484,7 +488,7 @@
                     </p>
                 </div>
                 <button
-                    class="py-[14px] px-[22px] font-semibold md:text-base font-rubik-sans text-sm !custom-lg bg-orange rounded-lg md:mt-11 mt-6 text-white hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">Learn
+                    class="py-[14px] px-[22px] sm:h-[47px] h-[45px] flex items-center font-semibold md:text-base font-rubik-sans text-sm !custom-lg bg-orange rounded-lg md:mt-11 mt-6 text-white hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">Learn
                     more</button>
             </div>
             <img src="./assets/images/webp/tourist-img.webp" alt="tourist-img"
@@ -493,11 +497,10 @@
     </section>
 
     <!-------accordion section --------->
-    <section id="blog" class="relative">
-        <div class="absolute top-[25%]">
-            <img src="assets/images/webp/faq-layer.webp" alt="faq-layer" class="pointer-events-none">
-        </div>
-        <div class="container">
+    <section id="blog" class="xl:pb-[70px] lg:pb-16 md:pb-12 pb-[20px] relative">
+        <img src="assets/images/webp/faq-layer.webp" alt="faq-layer"
+            class="pointer-events-none -z-10 absolute top-[25%]">
+        <div class="container max-sm:px-6">
             <h2
                 class="font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-black text-center leading-custom-lg font-rubik-sans">
                 Frequently Asked <span class="font-bold text-red">Questions</span>
@@ -509,12 +512,12 @@
                 and
                 immigration
                 processes.</p>
-            <div class="mx-auto xl:pt-16 lg:pt-12 md:pt-10 pt-8 lg:mb-[381px] md:mb-[230px] mb-[181px]">
+            <div class="mx-auto xl:pt-16 lg:pt-12 md:pt-10 pt-8 xl:mb-[361px] lg:mb-[329px] md:mb-[230px] mb-[184px]">
                 <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
                     <div
-                        class="accordion-item py-[18px] px-6 border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
-                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black items-center flex">
                                 What is Herbert?
                             </p>
                             <div class="accordion-icons flex justify-end">
@@ -533,7 +536,7 @@
                         </div>
                     </div>
                     <div
-                        class="accordion-item py-[18px] px-6 border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 How accurate is the information provided by Herbert?
@@ -557,7 +560,7 @@
                 </div>
                 <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
                     <div
-                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 How can I access Herbert?
@@ -579,7 +582,7 @@
                         </div>
                     </div>
                     <div
-                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 How can Herbert help me with my visa application?
@@ -603,7 +606,7 @@
                 </div>
                 <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
                     <div
-                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 Is Herbert available in multiple languages?
@@ -625,7 +628,7 @@
                         </div>
                     </div>
                     <div
-                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 Can Herbert help me fill out my visa application forms?
@@ -648,7 +651,7 @@
                     </div>
                 </div>
                 <button
-                    class="whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 md:mt-8 mt-4 items-center sm:py-[14px] py-2 sm:px-6 px-4 font-medium font-inter-sans overflow-hidden bg-orange border-orange rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px] h-12">
+                    class="whitespace-nowrap relative mx-auto flex xl:mt-8 lg:mt-10 md:mt-8 mt-8 items-center sm:py-[14px] py-2 sm:px-6 px-4 font-medium overflow-hidden bg-orange border-orange rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px] h-12">
                     <span class="relative z-10 flex">View all
                     </span>
                 </button>
@@ -657,10 +660,10 @@
     </section>
 
     <!---------footer ----------->
-    <section id="footer" class="relative">
-        <div class="container">
+    <section id="footer" class="relative 2xl:w-[1536px] mx-auto">
+        <div class="container max-sm:px-6">
             <div
-                class="xl:w-[1140px] lg:w-[1000px] md:w-[745px] sm:w-[600px] bg-orange rounded-xl py-16 absolute xl:left-[11%] lg:top-[-54%] max-sm:w-[353px] mx-auto max-sm:p-5 md:top-[-39%] top-[-20%] max-sm:top-[-20%]">
+                class="xl:w-[1140px] lg:w-[1000px] md:w-[745px] sm:w-[600px] bg-orange rounded-xl py-16 absolute xl:left-[11%] xl:top-[-63%] lg:top-[-68%] max-sm:w-[333px] mx-auto max-sm:p-5 md:top-[-34%] top-[-20%] max-sm:top-[-20%]">
                 <h2
                     class="font-semibold font-rubik-sans text-white xl:text-5xl lg:text-4xl md:text-3xl text-2xl max-w-[632px] mx-auto text-center !leading-custom-lg">
                     Need Help in Your Visa? Ask Herbert Now!</h2>
@@ -669,92 +672,97 @@
                     Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
                     sit
                     nullam.</p>
-                <div class="lg:flex md:gap-4 gap-3 max-w-[387px] mx-auto max-lg:pt-8">
+                <div class="sm:flex md:gap-4 gap-3 max-w-[387px] mx-auto max-lg:pt-8">
                     <button
-                        class="max-lg:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 items-center py-[14px] px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
+                        class="max-sm:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 sm:mt-3 items-center sm:py-[14px] py-3 px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
                         <span class="relative z-10 flex">Start your conversation
                         </span>
                     </button>
                     <button
-                        class="max-lg:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 mt-3 items-center py-[14px] px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
+                        class="max-sm:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 mt-3 items-center sm:py-[14px] py-3 px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
                         <span class="relative z-10 flex">Learn More
                         </span>
                     </button>
                 </div>
             </div>
         </div>
-        <footer id="footer" class="xl:pt-[212px] lg:pt-[174px] pt-[190px] xl:px-0 lg:px-4 md:px-4 px-0 bg-off-white">
-            <div class="container">
+        <footer id="footer"
+            class="xl:pt-[197px] lg:pt-[157px] md:pt-[170px] pt-[203px] xl:px-0 lg:px-4 md:px-4 px-0 bg-off-white">
+            <div class="container max-sm:px-6">
                 <div class="mx-auto flex flex-wrap justify-between md:gap-8 sm:gap-7 gap-6">
                     <div class="flex-col flex">
                         <a href="#">
-                            <img src="assets/images/webp/logo.webp" alt="logo" class="md:w-[326px] w-[210px]">
+                            <img src="assets/images/webp/logo.webp" alt="logo"
+                                class="lg:w-[326px] md:w-[250px] w-[210px]">
                         </a>
-                        <p class="text-black opacity-60 max-w-[412px] !leading-custom-xl pt-4 font-normal text-base">
+                        <p
+                            class="text-black opacity-60 max-w-[412px] !leading-custom-xl pt-4 font-normal sm:text-base text-sm">
                             Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis
                             tempor
                             tristique. Purus sed
                             phasellus metus lectus auctor.
                         </p>
                     </div>
-                    <div class="flex-col flex">
-                        <h5 class="text-base font-medium text-gray-900 sm:mb-5 md:mb-4">Quick Links</h5>
-                        <ul class="text-gray-500 space-y-1">
-                            <li><a href="#hero"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Services</a>
-                            </li>
-                            <li><a href="#about"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">About
-                                    Us</a>
-                            </li>
-                            <li><a href="#trip"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Features</a>
-                            </li>
-                            <li><a href="#trip"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Plans</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-col flex">
-                        <h5 class="text-base font-medium text-gray-900 sm:mb-5 md:mb-4">Support</h5>
-                        <ul class="text-gray-500 space-y-1 pt-2 sm:pt-0">
-                            <li><a href="#footer"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Help
-                                    Center
-                                    Us</a></li>
-                            <li><a href="#testimonials"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Term
-                                    & Conditions</a>
-                            </li>
-                            <li><a href="#about"
-                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Privacy
-                                    Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-col flex">
-                        <p class="text-base font-medium text-gray-900 pb-3 md:mb-4">Follow Us</p>
-                        <div class="flex gap-3">
-                            <a href="https://www.facebook.com/"
-                                class="gap-4 hover:scale-125 transition-all duration-500"><img
-                                    src="assets/images/svg/fb.svg" alt="facebook"> </a>
+                    <div class="flex flex-wrap xl:gap-20 lg:gap-12 md:gap-40 gap-10">
+                        <div class="flex-col flex max-sm:mr-10">
+                            <h5 class="sm:text-base text-sm font-medium text-gray-900 sm:mb-5 md:mb-4">Quick Links</h5>
+                            <ul class="text-gray-500 space-y-1 pt-4 sm:pt-0">
+                                <li><a href="#services"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">Services</a>
+                                </li>
+                                <li><a href="#about"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">About
+                                        Us</a>
+                                </li>
+                                <li><a href="#features"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">Features</a>
+                                </li>
+                                <li><a href="#plan"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] sm:pb-2 pb-0  font-normal font-montserrat-sans sm:text-base text-sm">Plans</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-col flex">
+                            <h5 class="sm:text-base text-sm font-medium text-gray-900 sm:mb-5 md:mb-4">Support</h5>
+                            <ul class="text-gray-500 space-y-1 pt-4 sm:pt-0">
+                                <li><a href="#help"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Help
+                                        Center
+                                        Us</a></li>
+                                <li><a href="#term"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Term
+                                        & Conditions</a>
+                                </li>
+                                <li><a href="#privacy"
+                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Privacy
+                                        Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-col flex">
+                            <p class="sm:text-base text-sm font-medium text-gray-900 pb-3 md:mb-4">Follow Us</p>
+                            <div class="flex gap-3">
+                                <a href="https://www.facebook.com/" target="_blank"
+                                    class="gap-4 hover:scale-125 transition-all duration-500"><img
+                                        src="assets/images/svg/facebook.svg" alt="facebook"> </a>
 
-                            <a href="https://www.instagram.com/"
-                                class="gap-3 hover:scale-125 transition-all duration-500"><img
-                                    src="assets/images/svg/insta.svg" alt="instagram"></a>
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    class="gap-3 hover:scale-125 transition-all duration-500"><img
+                                        src="assets/images/svg/instagram.svg" alt="instagram"></a>
 
-                            <a href="https://in.linkedin.com/"
-                                class="gap-3 hover:scale-125 transition-all duration-500"><img
-                                    src="assets/images/svg/link.svg" alt="linkedin"></a>
+                                <a href="https://in.linkedin.com/" target="_blank"
+                                    class="gap-3 hover:scale-125 transition-all duration-500"><img
+                                        src="assets/images/svg/linkdin.svg" alt="linkdin"></a>
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black opacity-15 mt-12"></div>
-            <div class="my-4 text-black opacity-50 text-sm sm:flex justify-center">
+            <div class="my-4 text-gray text-sm sm:flex justify-center">
                 <p class="font-normal font-inter-sans md:text-base text-sm sm:text-left text-center">
-                    Copyright &copy; <span id="year"></span> herbert, All rights reserved
+                    Copyright &copy; <span id="year"></span> herbert, All rights reserved
                 </p>
             </div>
             <div
