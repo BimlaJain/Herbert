@@ -1,222 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Herbert</title>
-        <!---------------custom css link------------------------>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <!---------------------favicon--------------------------->
-        <link rel="shortcut icon" href="assets/images/webp/fav.webp" type="image/x-icon">
-        <!---------------------------------tailwind link-------------------->
-        <script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbert</title>
+    <!---------------custom css link------------------------>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!---------------------favicon--------------------------->
+    <link rel="shortcut icon" href="assets/images/webp/fav.webp" type="image/x-icon">
+    <!---------------------------------tailwind link-------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- primary meta tags -->
-        <meta name="title" content="Herbert" />
-        <meta name="description"
-            content="Herbert Visa: Your AI-powered assistant for German visa and immigration processes" />
+    <!-- primary meta tags -->
+    <meta name="title" content="Herbert" />
+    <meta name="description"
+        content="Herbert Visa: Your AI-powered assistant for German visa and immigration processes" />
 
-        <!-- open graph / facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://herbert-five.vercel.app/" />
-        <meta property="og:title" content="Herbert" />
-        <meta property="og:description"
-            content="Herbert Visa: Your AI-powered assistant for German visa and immigration processes" />
-        <meta property="og:image" content="/meta-img.webp" />
+    <!-- open graph / facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://herbert-five.vercel.app/" />
+    <meta property="og:title" content="Herbert" />
+    <meta property="og:description"
+        content="Herbert Visa: Your AI-powered assistant for German visa and immigration processes" />
+    <meta property="og:image" content="/meta-img.webp" />
 
-        <!-- twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://herbert-five.vercel.app/" />
-        <meta property="twitter:title" content="Herbert" />
-        <meta property="twitter:description"
-            content="Herbert Visa: Your AI-powered assistant for German visa and immigration processes" />
-        <meta property="twitter:image" content="/meta-img.webp" />
-        <!-- Meta Tags Generated with https://metatags.io/ -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        container: {
-                            center: true,
-                            padding: "12px",
-                            screens: {
-                                sm: "575px",
-                                md: "768px",
-                                lg: "1024px",
-                                xl: "1140px",
-                            },
-                        },
-                        fontFamily: {
-                            "lato-sans": ["Lato", 'sans-serif'],
-                            "rubik-sans": ["Rubik", 'sans-serif'],
-                        },
-                        fontSize: {
-                            "custom-xl": "44px",
-                            "custom-2xl": "56px",
-                        },
-                        colors: {
-                            "red": "#FF4C24",
-                            "orange": "#FF9748",
-                            "gray": "#5F5F5F",
-                            "yellow": "#FFE36C",
-                            "off-white": "#FFF8F2",
-                            "light-white": "#FFF8F2",
-                            "light-gray":"#D6D6D6"
-                        },
-                        lineHeight: {
-                            "custom-base": "130%",
-                            "custom-lg": "120%",
-                            "custom-xl": "150%",
-                            "custom-2xl": "180%",
-                        },
-                        borderRadius: {
-                            'corner-full': 'var(--CornerFull)',
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://herbert-five.vercel.app/" />
+    <meta property="twitter:title" content="Herbert" />
+    <meta property="twitter:description"
+        content="Herbert Visa: Your AI-powered assistant for German visa and immigration processes" />
+    <meta property="twitter:image" content="/meta-img.webp" />
+    <!-- Meta Tags Generated with https://metatags.io/ -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        center: true,
+                        padding: "12px",
+                        screens: {
+                            sm: "575px",
+                            md: "768px",
+                            lg: "1024px",
+                            xl: "1140px",
+                            '2xl': "1536px",
                         },
                     },
+                    fontFamily: {
+                        "lato-sans": ["Lato", 'sans-serif'],
+                        "rubik-sans": ["Rubik", 'sans-serif'],
+                    },
+                    fontSize: {
+                        "custom-xl": "44px",
+                        "custom-2xl": "56px",
+                    },
+                    colors: {
+                        "red": "#FF4C24",
+                        "orange": "#FF9748",
+                        "gray": "#5F5F5F",
+                        "yellow": "#FFE36C",
+                        "off-white": "#FFF8F2",
+                        "light-white": "#FFF8F2",
+                        "light-gray": "#D6D6D6"
+                    },
+                    lineHeight: {
+                        "custom-base": "130%",
+                        "custom-lg": "120%",
+                        "custom-xl": "150%",
+                        "custom-2xl": "180%",
+                    },
+                    borderRadius: {
+                        'corner-full': 'var(--CornerFull)',
+                    },
                 },
-            };
-        </script>
+            },
+        };
+    </script>
 
-    </head>
+</head>
 
-    <body class="font-lato-sans scroll-smooth">
-        <!---------------------------hero section--------------------------------->
-        <section id="hero"
-            class=" xl:pb-20 lg:pb-10 md:pb-7 pb-10 relative">
-            <img src="assets/images/webp/hero-layer.webp" alt="hero-layer" class="absolute  bg-cover bg-center -z-20">
-            <div class="container max-sm:px-6">
-                <nav class="flex justify-between items-center xl:pt-6 lg:pt-5 md:pt-4 pt-3 sm:pb-4 pb-0">
-                    <a href="#" class="sm:w-44 w-28 ">
-                        <img src="assets/images/webp/logo.webp" alt="logo" class="relative z-40">
-                    </a>
-                    <button id="menu-btn" class="text-black focus:outline-none z-40 relative lg:pr-4 lg:hidden pt-2">
-                        <svg id="hamburger-icon" width="24" height="18" viewBox="0 0 24 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.66884 0.661037C0.970399 0.773537 0.328212 1.35479 0.075087 2.09072C-0.0327255 2.40947 -0.0233505 3.05166 0.0891495 3.38916C0.576649 4.8001 2.29227 5.27822 3.45477 4.32666C4.20477 3.7126 4.40165 2.5501 3.90477 1.65947C3.62352 1.15791 3.0329 0.7501 2.45634 0.65635C2.14227 0.604787 1.99227 0.604787 1.66884 0.661037Z"
-                                fill="#010101" />
-                            <path
-                                d="M7.23281 1.17201C6.77813 1.26576 6.36094 1.60326 6.14531 2.05795C6.04219 2.27826 6.02344 2.38607 6.02344 2.71888C6.02344 3.07513 6.04219 3.15482 6.17813 3.43138C6.35156 3.78763 6.5625 3.99388 6.9375 4.16732L7.19531 4.2892L14.8594 4.30326C20.5078 4.31263 22.5891 4.30326 22.7812 4.26576C23.5078 4.11107 24 3.49232 24 2.71888C24 2.08138 23.6906 1.58451 23.1188 1.30326L22.8047 1.14857L15.1172 1.14388C10.8891 1.1392 7.34063 1.15326 7.23281 1.17201Z"
-                                fill="#010101" />
-                            <path
-                                d="M1.64536 6.94239C0.937549 7.07832 0.328174 7.63614 0.0750488 8.37207C-0.0233887 8.66739 -0.0233887 9.33301 0.0750488 9.62832C0.417236 10.6361 1.37817 11.2314 2.39536 11.0768C3.45005 10.9127 4.17661 10.0643 4.17661 9.0002C4.17661 7.64551 2.98599 6.67989 1.64536 6.94239Z"
-                                fill="#010101" />
-                            <path
-                                d="M7.20469 7.45809C6.75469 7.5659 6.35156 7.89872 6.14531 8.33934C6.04219 8.55965 6.02344 8.66747 6.02344 9.00028C6.02344 9.33309 6.04219 9.4409 6.14531 9.66122C6.30469 9.99872 6.59531 10.2893 6.93281 10.4487L7.19531 10.5706L14.9016 10.5847C23.3156 10.5987 22.8656 10.6081 23.2969 10.3362C24.2344 9.74559 24.2344 8.25497 23.2969 7.66434C22.8656 7.39247 23.3156 7.40653 15.0047 7.41122C10.7531 7.4159 7.30313 7.43465 7.20469 7.45809Z"
-                                fill="#010101" />
-                            <path
-                                d="M1.56102 13.2424C0.857899 13.4346 0.323524 13.9268 0.0891495 14.6158C-0.0233505 14.9486 -0.0327255 15.5955 0.075087 15.9096C0.417274 16.9127 1.37352 17.5033 2.40009 17.3533C3.20165 17.2315 3.83446 16.6877 4.10165 15.8955C4.20946 15.5674 4.20009 14.958 4.0829 14.6158C3.71727 13.5611 2.61102 12.9611 1.56102 13.2424Z"
-                                fill="#010101" />
-                            <path
-                                d="M7.09245 13.7766C5.7237 14.25 5.62057 16.1156 6.93307 16.7297L7.19557 16.8516H15.0003H22.8049L23.119 16.6969C24.4221 16.0547 24.2487 14.1234 22.8518 13.7531C22.6596 13.7016 21.2206 13.6875 14.9768 13.6875C7.7487 13.6922 7.32213 13.6969 7.09245 13.7766Z"
-                                fill="#010101" />
-                        </svg>
+<body class="font-lato-sans">
+    <!---------------------------hero section--------------------------------->
+    <section id="hero" class=" xl:pb-20 lg:pb-10 md:pb-7 pb-5 relative">
+        <img src="assets/images/webp/hero-layer.webp" alt="hero-layer" class="absolute  bg-cover bg-center -z-20">
+        <div class="container">
+            <nav class="flex justify-between items-center xl:pt-6 lg:pt-5 md:pt-4 pt-3 sm:pb-4 pb-0">
+                <a href="#" class="sm:w-44 w-28 ">
+                    <img src="assets/images/webp/logo.webp" alt="logo" class="relative z-40">
+                </a>
+                <button id="menu-btn" class="text-black focus:outline-none z-40 relative lg:pr-4 lg:hidden pt-2">
+                    <svg id="hamburger-icon" width="24" height="18" viewBox="0 0 24 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.66884 0.661037C0.970399 0.773537 0.328212 1.35479 0.075087 2.09072C-0.0327255 2.40947 -0.0233505 3.05166 0.0891495 3.38916C0.576649 4.8001 2.29227 5.27822 3.45477 4.32666C4.20477 3.7126 4.40165 2.5501 3.90477 1.65947C3.62352 1.15791 3.0329 0.7501 2.45634 0.65635C2.14227 0.604787 1.99227 0.604787 1.66884 0.661037Z"
+                            fill="#010101" />
+                        <path
+                            d="M7.23281 1.17201C6.77813 1.26576 6.36094 1.60326 6.14531 2.05795C6.04219 2.27826 6.02344 2.38607 6.02344 2.71888C6.02344 3.07513 6.04219 3.15482 6.17813 3.43138C6.35156 3.78763 6.5625 3.99388 6.9375 4.16732L7.19531 4.2892L14.8594 4.30326C20.5078 4.31263 22.5891 4.30326 22.7812 4.26576C23.5078 4.11107 24 3.49232 24 2.71888C24 2.08138 23.6906 1.58451 23.1188 1.30326L22.8047 1.14857L15.1172 1.14388C10.8891 1.1392 7.34063 1.15326 7.23281 1.17201Z"
+                            fill="#010101" />
+                        <path
+                            d="M1.64536 6.94239C0.937549 7.07832 0.328174 7.63614 0.0750488 8.37207C-0.0233887 8.66739 -0.0233887 9.33301 0.0750488 9.62832C0.417236 10.6361 1.37817 11.2314 2.39536 11.0768C3.45005 10.9127 4.17661 10.0643 4.17661 9.0002C4.17661 7.64551 2.98599 6.67989 1.64536 6.94239Z"
+                            fill="#010101" />
+                        <path
+                            d="M7.20469 7.45809C6.75469 7.5659 6.35156 7.89872 6.14531 8.33934C6.04219 8.55965 6.02344 8.66747 6.02344 9.00028C6.02344 9.33309 6.04219 9.4409 6.14531 9.66122C6.30469 9.99872 6.59531 10.2893 6.93281 10.4487L7.19531 10.5706L14.9016 10.5847C23.3156 10.5987 22.8656 10.6081 23.2969 10.3362C24.2344 9.74559 24.2344 8.25497 23.2969 7.66434C22.8656 7.39247 23.3156 7.40653 15.0047 7.41122C10.7531 7.4159 7.30313 7.43465 7.20469 7.45809Z"
+                            fill="#010101" />
+                        <path
+                            d="M1.56102 13.2424C0.857899 13.4346 0.323524 13.9268 0.0891495 14.6158C-0.0233505 14.9486 -0.0327255 15.5955 0.075087 15.9096C0.417274 16.9127 1.37352 17.5033 2.40009 17.3533C3.20165 17.2315 3.83446 16.6877 4.10165 15.8955C4.20946 15.5674 4.20009 14.958 4.0829 14.6158C3.71727 13.5611 2.61102 12.9611 1.56102 13.2424Z"
+                            fill="#010101" />
+                        <path
+                            d="M7.09245 13.7766C5.7237 14.25 5.62057 16.1156 6.93307 16.7297L7.19557 16.8516H15.0003H22.8049L23.119 16.6969C24.4221 16.0547 24.2487 14.1234 22.8518 13.7531C22.6596 13.7016 21.2206 13.6875 14.9768 13.6875C7.7487 13.6922 7.32213 13.6969 7.09245 13.7766Z"
+                            fill="#010101" />
+                    </svg>
 
-                        <svg id="close-icon" class="hidden" width="22" height="22" viewBox="0 0 22 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.8284 8.17162L8.17157 13.8285M8.17157 8.17162L13.8284 13.8285M18.0711 18.0711C14.1658 21.9764 7.83418 21.9764 3.92893 18.0711C0.0236893 14.1659 0.023689 7.83422 3.92893 3.92898C7.83418 0.0237349 14.1658 0.0237349 18.0711 3.92898C21.9763 7.83422 21.9763 14.1659 18.0711 18.0711Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <ul class="lg:flex hidden gap-11 items-center">
+                    <svg id="close-icon" class="hidden" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.8284 8.17162L8.17157 13.8285M8.17157 8.17162L13.8284 13.8285M18.0711 18.0711C14.1658 21.9764 7.83418 21.9764 3.92893 18.0711C0.0236893 14.1659 0.023689 7.83422 3.92893 3.92898C7.83418 0.0237349 14.1658 0.0237349 18.0711 3.92898C21.9763 7.83422 21.9763 14.1659 18.0711 18.0711Z"
+                            stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <ul class="lg:flex hidden gap-11 items-center">
+                    <li class=" rounded-full active">
+                        <a href="#hero"
+                            class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Herbert</a>
+                    </li>
+                    <li>
+                        <a href="#main"
+                            class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Sources</a>
+                    </li>
+                    <li class="relative">
+                        <a href="#blog"
+                            class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Our
+                            Vision</a>
+                    </li>
+                </ul>
+                <div id="mobile-menu"
+                    class="fixed lg:hidden inset-0 z-30 bg-blue bg-white flex flex-col items-center justify-center space-y-6 text-xl transform translate-x-full transition-transform duration-700 ease-out px-6">
+                    <ul class="p-2 rounded-full items-center justify-start flex flex-col">
                         <li class=" rounded-full active">
                             <a href="#hero"
-                                class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Herbert</a>
+                                class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300 flex justify-center">Herbert</a>
+                            <p class="border border-black opacity-15 w-[327px] my-6"></p>
                         </li>
                         <li>
                             <a href="#main"
-                                class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Sources</a>
+                                class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300 flex justify-center">Sources</a>
+                            <p class="border border-black opacity-15 w-[327px] my-6"></p>
                         </li>
                         <li class="relative">
-                            <a href="#blog"
+                            <a href="#footer"
                                 class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Our
                                 Vision</a>
                         </li>
+                        <li>
+                            <button
+                                class="bg-orange py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white mt-8 rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">Start
+                                your conversation with Herbert</button>
+                        </li>
                     </ul>
-                    <div id="mobile-menu"
-                        class="fixed lg:hidden inset-0 z-30 bg-blue bg-white flex flex-col items-center justify-center space-y-6 text-xl transform translate-x-full transition-transform duration-700 ease-out px-6">
-                        <ul class="p-2 rounded-full items-center justify-start flex flex-col">
-                            <li class=" rounded-full active">
-                                <a href="#hero"
-                                    class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300 flex justify-center">Herbert</a>
-                                <p class="border border-black opacity-15 w-[327px] my-6"></p>
-                            </li>
-                            <li>
-                                <a href="#main"
-                                    class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300 flex justify-center">Sources</a>
-                                <p class="border border-black opacity-15 w-[327px] my-6"></p>
-                            </li>
-                            <li class="relative">
-                                <a href="#footer"
-                                    class="relative pb-1 !leading-custom-xl font-normal text-base text-gray hover:text-black after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[3px] after:w-8 after:bg-black after:rounded-full after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-300">Our
-                                    Vision</a>
-                            </li>
-                            <li>
-                                <button
-                                    class="bg-orange py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white mt-8 rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white">Start
-                                    your conversation with Herbert</button>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="container max-w-[1314px] mx-auto max-sm:px-6">
-                <div class="flex items-center justify-center">
-                    <img src="assets/images/webp/raised man.webp" alt="man with hello"
-                        class="xl:w-[329px] lg:w-[290px] md:w-[240px] w-[204px] mt-14 md:block hidden pointer-events-none">
-                    <div class="flex flex-col justify-center items-center md:-ml-8 xl:-ml-24">
-                        <h1
-                            class="font-rubik-sans font-semibold xl:text-custom-2xl lg:text-4xl md:text-[26px] text-[28px] max-md:pt-20 text-black max-w-[716px] mx-auto text-center xl:pb-4 pb-2 !leading-custom-lg">
-                            Navigating <span class="text-red">German Bureaucracy</span> with ease</h1>
-                        <p
-                            class="font-normal md:text-base text-sm !leading-custom-xl text-gray text-center xl:pb-[42px] lg:pb-8 pb-8">
-                            Herbert Visa: Your AI-powered assistant for German visa and immigration processes</p>
-                        <button
-                            class="bg-orange py-[13px] sm:py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white xl:w-[338px] lg:w-[320px] max-sm:h-[46px]">Start
-                            your conversation with Herbert</button>
-                    </div>
-                    <img src="assets/images/webp/down man.webp" alt="man hands down"
-                        class="xl:w-[324px] lg:w-[290px] md:w-[200px] w-[139px] mt-28 md:block hidden pointer-events-none">
                 </div>
-                <div class="flex">
-                    <img src="assets/images/webp/raised man.webp" alt="man with hello"
-                        class=" w-[204px] h-[372px] mt-20 md:hidden block pointer-events-none">
-                    <img src="assets/images/webp/down man.webp" alt="man hands down"
-                        class=" w-[139px] h-[231px] mt-28 md:hidden block pointer-events-none">
+            </nav>
+        </div>
+        <div class="container max-w-[1314px] mx-auto">
+            <div class="flex items-center justify-center">
+                <img src="assets/images/webp/raised man.webp" alt="man with hello"
+                    class="xl:w-[329px] lg:w-[290px] md:w-[240px] w-[204px] mt-14 md:block hidden pointer-events-none">
+                <div class="flex flex-col justify-center items-center md:-ml-8 max-md:px-3">
+                    <h1
+                        class="font-rubik-sans font-semibold xl:text-custom-2xl lg:text-4xl md:text-[26px] text-[28px] max-md:pt-20 text-black max-w-[716px] mx-auto text-center xl:pb-4 pb-2 !leading-custom-lg">
+                        Navigating <span class="text-red">German Bureaucracy</span> with ease</h1>
+                    <p
+                        class="font-normal md:text-base text-sm !leading-custom-xl text-gray text-center xl:pb-[42px] lg:pb-8 pb-8">
+                        Herbert Visa: Your AI-powered assistant for German visa and immigration processes</p>
+                    <button
+                        class="bg-orange py-[14px] px-6 font-rubik-sans font-semibold text-sm text-white rounded-lg hover:text-orange transition-all duration-500 border-2 border-orange hover:bg-white xl:w-[338px] lg:w-[320px]">Start
+                        your conversation with Herbert</button>
                 </div>
+                <img src="assets/images/webp/down man.webp" alt="man hands down"
+                    class="xl:w-[324px] lg:w-[290px] md:w-[200px] w-[139px] mt-28 md:block hidden pointer-events-none">
             </div>
-            <div class="container max-w-[1174px] mx-auto max-sm:px-6">
-                <div class="flex max-lg:flex-wrap md:gap-7 gap-3 justify-center items-center max-lg:mt-11 -mt-8">
-                    <div
-                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[76px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
-                        <img src="assets/images/svg/form.svg" alt="form svg" class="pointer-events-none sm:size-14 size-12">
-                        <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">Interactive Forms
-                        </h2>
-                        <p class="font-normal md:text-base text-sm text-gray text-center">Simplify visa application
-                            forms</p>
-                    </div>
-                    <div
-                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[53px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
-                        <img src="assets/images/svg/check.svg" alt="checklist svg" class="sm:size-14 size-12 pointer-events-none">
-                        <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">Document Checklist
-                        </h2>
-                        <p class="font-normal md:text-base text-sm text-gray text-center">Personalized document
-                            preparation</p>
-                    </div>
-                    <div
-                        class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px] cursor-pointer">
-                        <img src="assets/images/svg/assistance.svg" alt="assistance svg"
-                            class="sm:size-14 size-12 pointer-events-none">
-                        <h2 class="sm:pt-4 pt-3 sm:pb-3 pb-2 font-medium md:text-xl text-base text-black text-center">Language
-                            Assistance</h2>
-                        <p class="font-normal md:text-base text-sm text-gray text-center">German language skills
-                            assessment</p>
-                    </div>
+            <div class="flex">
+                <img src="assets/images/webp/raised man.webp" alt="man with hello"
+                    class=" w-[204px] h-[372px] mt-14 md:hidden block pointer-events-none">
+                <img src="assets/images/webp/down man.webp" alt="man hands down"
+                    class=" w-[139px] h-[231px] mt-28 md:hidden block pointer-events-none">
+            </div>
+        </div>
+        <div class="container ">
+            <div class="flex max-lg:flex-wrap md:gap-7 gap-3 justify-center items-center max-lg:pt-11 -mt-8">
+                <div
+                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
+                    <img src="assets/images/svg/form.svg" alt="form svg" class="size-14 pointer-events-none">
+                    <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Interactive Forms
+                    </h2>
+                    <p class="font-normal md:text-base text-sm text-gray text-center">Simplify visa application
+                        forms</p>
+                </div>
+                <div
+                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[53px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
+                    <img src="assets/images/svg/check.svg" alt="checklist svg" class="size-14 pointer-events-none">
+                    <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Document Checklist
+                    </h2>
+                    <p class="font-normal md:text-base text-sm text-gray text-center">Personalized document
+                        preparation</p>
+                </div>
+                <div
+                    class="flex items-center justify-center flex-col bg-white border border-light-gray py-5 xl:px-[75px] lg:px-[45px] md:px-5 sm:px-[55px] rounded-xl hover:scale-110 transition-all duration-500 hover:border-0 hover:shadow-xl xl:w-[364px] lg:w-[300px] md:w-[300px] w-[327px]">
+                    <img src="assets/images/svg/assistance.svg" alt="assistance svg"
+                        class="size-14 pointer-events-none">
+                    <h2 class="pt-4 pb-3 font-medium md:text-xl text-base text-black text-center">Language
+                        Assistance</h2>
+                    <p class="font-normal md:text-base text-sm text-gray text-center">German language skills
+                        assessment</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!---------------MAIN FEATURES-------------------->
     <section id="main" class="xl:pt-[60px] lg:pt-10 md:pt-7 pt-10 xl:pb-[120px] lg:pb-20 pb-20 relative">
@@ -304,7 +304,8 @@
                 <div class="flex lg:w-4/12">
                     <div class="flex flex-col max-sm:ml-5">
                         <div class="flex flex-col justify-end">
-                            <div class="md:size-10 size-[30px] bg-orange rounded-[60px] flex items-center justify-center">
+                            <div
+                                class="md:size-10 size-[30px] bg-orange rounded-[60px] flex items-center justify-center">
                                 <img src="./assets/images/svg/number4.svg" alt="number1"
                                     class="lg:block hidden pointer-events-none">
                                 <img src="./assets/images/svg/number2.svg" alt="number"
@@ -323,7 +324,8 @@
                                 necessary documents</p>
                         </div>
                         <div class="flex flex-col justify-end lg:pt-14 md:pt-6 pt-4">
-                            <div class="md:size-10 size-[30px] bg-orange rounded-[60px] flex items-center justify-center">
+                            <div
+                                class="md:size-10 size-[30px] bg-orange rounded-[60px] flex items-center justify-center">
                                 <img src="./assets/images/svg/number5.svg" alt="number"
                                     class="lg:block hidden pointer-events-none">
                                 <img src="./assets/images/svg/number4.svg" alt="number1"
@@ -340,7 +342,8 @@
                                 interview</p>
                         </div>
                         <div class="flex flex-col justify-end lg:pt-14 md:pt-11 pt-8">
-                            <div class="md:size-10 size-[30px] bg-orange rounded-[60px] flex items-center justify-center">
+                            <div
+                                class="md:size-10 size-[30px] bg-orange rounded-[60px] flex items-center justify-center">
                                 <img src="./assets/images/svg/number6.svg" alt="number"
                                     class="pointer-events-none max-sm:w-2 max-sm:h-[13px]">
                             </div>
@@ -356,7 +359,7 @@
         <img src="./assets/images/webp/bottom-layer.webp" alt="bottom-layer"
             class="w-full h-[204px] absolute bottom-0 -z-10 pointer-events-none">
     </section>
-    
+
     <!----------------PRICING PLANS------------------->
     <section class="bg-light-white relative xl:py-20 lg:py-16 md:py-20 py-16">
         <img src="./assets/images/webp/third-layer.webp" alt="third-layer"
@@ -441,7 +444,7 @@
             </div>
         </div>
     </section>
-    
+
     <!----------------TEAM & RESOURCES------------------->
     <section class="relative overflow-hidden xl:pt-36 lg:pt-216 md:pt-20 pt-16 xl:pb-[125px] lg:pb-20 md:pb-14 pb-20">
         <img src="./assets/images/webp/bg-layer.webp" alt="bg-layer"
@@ -450,7 +453,8 @@
             class="lg:max-w-[777px] xl:h-[693px] lg:h-[550px] md:max-w-[500px] md:h-[433px] absolute top-[-17%] opacity-5 md:block hidden pointer-events-none">
         <div class="container px-4">
             <div class="flex-col xl:my-36 lg:my-14 md:my-8">
-                <h2 class="font-semibold lg:text-5xl md:text-4xl text-2xl font-rubik-sans max-md:pb-3 leading-custom-lg">
+                <h2
+                    class="font-semibold lg:text-5xl md:text-4xl text-2xl font-rubik-sans max-md:pb-3 leading-custom-lg">
                     Team <span class="text-red">&</span> Resources
                 </h2>
                 <p
@@ -489,9 +493,11 @@
     </section>
 
     <!-------accordion section --------->
-    <section id="blog" class="xl:pb-[70px] lg:pb-16 md:pb-12 pb-[20px] relative">
-            <img src="assets/images/webp/faq-layer.webp" alt="faq-layer" class="pointer-events-none -z-10 absolute top-[25%]">
-        <div class="container max-sm:px-6">
+    <section id="blog" class="relative">
+        <div class="absolute top-[25%]">
+            <img src="assets/images/webp/faq-layer.webp" alt="faq-layer" class="pointer-events-none">
+        </div>
+        <div class="container">
             <h2
                 class="font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-black text-center leading-custom-lg font-rubik-sans">
                 Frequently Asked <span class="font-bold text-red">Questions</span>
@@ -503,12 +509,12 @@
                 and
                 immigration
                 processes.</p>
-            <div class="mx-auto xl:pt-16 lg:pt-12 md:pt-10 pt-8 lg:mb-[361px] md:mb-[230px] mb-[200px]">
+            <div class="mx-auto xl:pt-16 lg:pt-12 md:pt-10 pt-8 lg:mb-[381px] md:mb-[230px] mb-[181px]">
                 <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
                     <div
-                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
+                        class="accordion-item py-[18px] px-6 border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
-                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black items-center flex">
+                            <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 What is Herbert?
                             </p>
                             <div class="accordion-icons flex justify-end">
@@ -527,7 +533,7 @@
                         </div>
                     </div>
                     <div
-                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
+                        class="accordion-item py-[18px] px-6 border border-light-gray xl:mb-6 lg:mb-5 mb-4 rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 How accurate is the information provided by Herbert?
@@ -551,7 +557,7 @@
                 </div>
                 <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
                     <div
-                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 How can I access Herbert?
@@ -573,7 +579,7 @@
                         </div>
                     </div>
                     <div
-                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 How can Herbert help me with my visa application?
@@ -597,7 +603,7 @@
                 </div>
                 <div class="md:flex xl:gap-6 lg:gap-5 gap-4">
                     <div
-                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 Is Herbert available in multiple languages?
@@ -619,7 +625,7 @@
                         </div>
                     </div>
                     <div
-                        class="accordion-item pt-[18px] pb-[6px] sm:px-6 px-[14px] xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
+                        class="accordion-item md:py-[18px] p-[14px] md:px-6 xl:mb-6 lg:mb-5 mb-4 border border-light-gray rounded-md bg-grey cursor-pointer">
                         <div class="accordion-header flex justify-between items-center w-full text-left">
                             <p class="font-normal md:text-base text-sm leading-custom-xl text-black">
                                 Can Herbert help me fill out my visa application forms?
@@ -642,19 +648,19 @@
                     </div>
                 </div>
                 <button
-                    class="whitespace-nowrap relative mx-auto flex xl:mt-8 lg:mt-10 md:mt-8 mt-8 items-center sm:py-[14px] py-2 sm:px-6 px-4 font-medium overflow-hidden bg-orange border-orange rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px] h-12">
+                    class="whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 md:mt-8 mt-4 items-center sm:py-[14px] py-2 sm:px-6 px-4 font-medium font-inter-sans overflow-hidden bg-orange border-orange rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px] h-12">
                     <span class="relative z-10 flex">View all
                     </span>
                 </button>
             </div>
         </div>
     </section>
-    
+
     <!---------footer ----------->
-    <section id="footer" class="relative 2xl:w-[1536px] mx-auto">
-        <div class="container max-sm:px-6">
+    <section id="footer" class="relative">
+        <div class="container">
             <div
-                class="xl:w-[1140px] lg:w-[1000px] md:w-[745px] sm:w-[600px] bg-orange rounded-xl py-16 absolute xl:left-[11%] xl:top-[-63%] lg:top-[-68%] max-sm:w-[333px] mx-auto max-sm:p-5 md:top-[-39%] top-[-20%] max-sm:top-[-20%]">
+                class="xl:w-[1140px] lg:w-[1000px] md:w-[745px] sm:w-[600px] bg-orange rounded-xl py-16 absolute xl:left-[11%] lg:top-[-54%] max-sm:w-[353px] mx-auto max-sm:p-5 md:top-[-39%] top-[-20%] max-sm:top-[-20%]">
                 <h2
                     class="font-semibold font-rubik-sans text-white xl:text-5xl lg:text-4xl md:text-3xl text-2xl max-w-[632px] mx-auto text-center !leading-custom-lg">
                     Need Help in Your Visa? Ask Herbert Now!</h2>
@@ -663,102 +669,98 @@
                     Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
                     sit
                     nullam.</p>
-                <div class="sm:flex md:gap-4 gap-3 max-w-[387px] mx-auto max-lg:pt-8">
+                <div class="lg:flex md:gap-4 gap-3 max-w-[387px] mx-auto max-lg:pt-8">
                     <button
-                        class="max-sm:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 sm:mt-3 items-center sm:py-[14px] py-3 px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
+                        class="max-lg:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 items-center py-[14px] px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
                         <span class="relative z-10 flex">Start your conversation
                         </span>
                     </button>
                     <button
-                        class="max-sm:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 mt-3 items-center sm:py-[14px] py-3 px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 sm:text-base text-sm text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
+                        class="max-lg:w-full text-center justify-center whitespace-nowrap relative mx-auto flex xl:mt-12 lg:mt-10 mt-3 items-center py-[14px] px-6 font-medium font-inter-sans overflow-hidden bg-orange border-white rounded-lg border-2 text-lg text-white transition-all hover:text-orange duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-200 before:ease-linear hover:bg-white hover:before:border-[30px]">
                         <span class="relative z-10 flex">Learn More
                         </span>
                     </button>
                 </div>
             </div>
         </div>
-        <footer id="footer"
-            class="xl:pt-[212px] lg:pt-[174px] md:pt-[170px] pt-[223px] xl:px-0 lg:px-4 md:px-4 px-0 bg-off-white">
-            <div class="container max-sm:px-6">
+        <footer id="footer" class="xl:pt-[212px] lg:pt-[174px] pt-[190px] xl:px-0 lg:px-4 md:px-4 px-0 bg-off-white">
+            <div class="container">
                 <div class="mx-auto flex flex-wrap justify-between md:gap-8 sm:gap-7 gap-6">
                     <div class="flex-col flex">
                         <a href="#">
-                            <img src="assets/images/webp/logo.webp" alt="logo" class="lg:w-[326px] md:w-[250px] w-[210px]">
+                            <img src="assets/images/webp/logo.webp" alt="logo" class="md:w-[326px] w-[210px]">
                         </a>
-                        <p
-                            class="text-black opacity-60 max-w-[412px] !leading-custom-xl pt-4 font-normal sm:text-base text-sm">
+                        <p class="text-black opacity-60 max-w-[412px] !leading-custom-xl pt-4 font-normal text-base">
                             Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis
                             tempor
                             tristique. Purus sed
                             phasellus metus lectus auctor.
                         </p>
                     </div>
-                    <div class="flex flex-wrap lg:gap-20 md:gap-40 gap-10">
-                        <div class="flex-col flex max-sm:mr-10">
-                            <h5 class="sm:text-base text-sm font-medium text-gray-900 sm:mb-5 md:mb-4">Quick Links</h5>
-                            <ul class="text-gray-500 space-y-1 pt-4 sm:pt-0">
-                                <li><a href="#services"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">Services</a>
-                                </li>
-                                <li><a href="#about"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">About
-                                        Us</a>
-                                </li>
-                                <li><a href="#features"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans sm:text-base text-sm">Features</a>
-                                </li>
-                                <li><a href="#plan"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] sm:pb-2 pb-0  font-normal font-montserrat-sans sm:text-base text-sm">Plans</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-col flex">
-                            <h5 class="sm:text-base text-sm font-medium text-gray-900 sm:mb-5 md:mb-4">Support</h5>
-                            <ul class="text-gray-500 space-y-1 pt-4 sm:pt-0">
-                                <li><a href="#help"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Help
-                                        Center
-                                        Us</a></li>
-                                <li><a href="#term"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Term
-                                        & Conditions</a>
-                                </li>
-                                <li><a href="#privacy"
-                                        class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal sm:text-base text-sm">Privacy
-                                        Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-col flex">
-                            <p class="sm:text-base text-sm font-medium text-gray-900 pb-3 md:mb-4">Follow Us</p>
-                            <div class="flex gap-3">
-                                <a href="https://www.facebook.com/" target="_blank"
-                                    class="gap-4 hover:scale-125 transition-all duration-500"><img
-                                        src="assets/images/svg/facebook.svg" alt="facebook"> </a>
-    
-                                <a href="https://www.instagram.com/" target="_blank"
-                                    class="gap-3 hover:scale-125 transition-all duration-500"><img
-                                        src="assets/images/svg/instagram.svg" alt="instagram"></a>
-    
-                                <a href="https://in.linkedin.com/" target="_blank"
-                                    class="gap-3 hover:scale-125 transition-all duration-500"><img
-                                        src="assets/images/svg/linkdin.svg" alt="linkdin"></a>
-    
-                            </div>
+                    <div class="flex-col flex">
+                        <h5 class="text-base font-medium text-gray-900 sm:mb-5 md:mb-4">Quick Links</h5>
+                        <ul class="text-gray-500 space-y-1">
+                            <li><a href="#hero"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Services</a>
+                            </li>
+                            <li><a href="#about"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">About
+                                    Us</a>
+                            </li>
+                            <li><a href="#trip"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Features</a>
+                            </li>
+                            <li><a href="#trip"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal font-montserrat-sans text-base">Plans</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-col flex">
+                        <h5 class="text-base font-medium text-gray-900 sm:mb-5 md:mb-4">Support</h5>
+                        <ul class="text-gray-500 space-y-1 pt-2 sm:pt-0">
+                            <li><a href="#footer"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Help
+                                    Center
+                                    Us</a></li>
+                            <li><a href="#testimonials"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Term
+                                    & Conditions</a>
+                            </li>
+                            <li><a href="#about"
+                                    class="text-gray hover:text-orange duration-500 transition-all leading-[28px] pb-2 font-normal text-base">Privacy
+                                    Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-col flex">
+                        <p class="text-base font-medium text-gray-900 pb-3 md:mb-4">Follow Us</p>
+                        <div class="flex gap-3">
+                            <a href="https://www.facebook.com/"
+                                class="gap-4 hover:scale-125 transition-all duration-500"><img
+                                    src="assets/images/svg/fb.svg" alt="facebook"> </a>
+
+                            <a href="https://www.instagram.com/"
+                                class="gap-3 hover:scale-125 transition-all duration-500"><img
+                                    src="assets/images/svg/insta.svg" alt="instagram"></a>
+
+                            <a href="https://in.linkedin.com/"
+                                class="gap-3 hover:scale-125 transition-all duration-500"><img
+                                    src="assets/images/svg/link.svg" alt="linkedin"></a>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black opacity-15 mt-12"></div>
-            <div class="my-4 text-gray text-sm sm:flex justify-center">
+            <div class="my-4 text-black opacity-50 text-sm sm:flex justify-center">
                 <p class="font-normal font-inter-sans md:text-base text-sm sm:text-left text-center">
-                    Copyright &copy; <span id="year"></span> herbert, All rights reserved
+                    Copyright &copy; <span id="year"></span> herbert, All rights reserved
                 </p>
             </div>
             <div
                 class="top-btn md:size-14 sm:size-10 size-9 rounded-full fixed bottom-7 right-7 bg-darkblue z-20 p-2 bg-orange hover:scale-110 duration-500 cursor-pointer flex justify-center items-center transition scroll-smooth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="white" class="bi bi-chevron-double-up"
-                    viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="white"
+                    class="bi bi-chevron-double-up" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
                     <path fill-rule="evenodd"
@@ -768,8 +770,8 @@
         </footer>
     </section>
 
-        <!--------------------------------js link-------------------------->
-        <script src="assets/js/app.js"></script>
-    </body>
+    <!--------------------------------js link-------------------------->
+    <script src="assets/js/app.js"></script>
+</body>
 
 </html>
